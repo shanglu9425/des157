@@ -51,6 +51,10 @@ header.header nav.nav {
     float: right;
 }
 
+#logo-type a {
+    color: #50899F !important;
+}
+
 nav ul,
 nav li {
     margin: 0;
@@ -109,10 +113,10 @@ header.header nav.nav ul li {
 }
 
 .post-content p {
-    margin-top: 15px;
-    margin-bottom: 10px;
-    font-size: 9pt;
+    margin: 15px 80px 10px 80px;
+    font-size: 11pt;
     color: darkgray;
+    line-height: 35px;
 }
 
 .post-content img {
