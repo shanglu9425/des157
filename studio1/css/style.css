@@ -320,3 +320,27 @@ header a:hover {
     color: #50899F;
     transition: 1s;
 }
+
+.topic {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: white;
+    width: 800px !important;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.topic-content {
+    padding: 10px;
+}
+
+.topic-content h3 {
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.topic-content p {
+    line-height: 30px;
+}
