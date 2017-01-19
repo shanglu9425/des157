@@ -1,6 +1,9 @@
-@font-face {
-    font-family: NovecentowideLightBold;
-    src: url(http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext)
+* {
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
 }
 
 body {
@@ -14,7 +17,7 @@ a {
 }
 
 .header {
-    width: 88%;
+    width: 100%;
     padding: 20px 6%;
     font-size: 11px;
     letter-spacing: 1.5px;
@@ -149,6 +152,9 @@ footer a {
     text-align: center;
 }
 
+
+/* sticky footer 1
+
 .blog-wrap {
     min-height: 100%;
     margin-bottom: -40px;
@@ -163,11 +169,27 @@ footer a {
 .page-wrap:after {
     height: 40px;
 }
+*/
+
+
+/* sticky footer 2 */
+
+.footer-section {
+    background: #404446;
+    color: #fff;
+    line-height: 1.6;
+    padding: 16px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+}
 
 
 /* REST */
 
-tml,
+html,
 body,
 div,
 span,
@@ -225,7 +247,6 @@ canvas,
 details,
 figcaption,
 figure,
-footer,
 header,
 hgroup,
 menu,
