@@ -7,6 +7,9 @@ var b0 = 0;
 var b1 = 0;
 var b2 = 0;
 var b3 = 0;
+var r = 20;
+var g = 55;
+var b = 35;
 var yspeed = 2.8;
 var img;
 var canvas
@@ -18,17 +21,37 @@ function setup() {
     console.log("this is a js comment");
     img = loadImage("studio1/assets/town.jpg");
     rectMode(RADIUS);
+    colorMode(HSB);
 }
 
 function draw() {
     background(img);
     stroke('white');
     strokeWeight(20);
-    fill('red');
+    fill(r, g, b);
     rect(100, b0, 100, 250);
+    fill(g, r, b);
     rect(300, b1, 100, 250);
+    fill(b, g, r);
     rect(500, b2, 100, 250);
+    fill(r, r, g);
     rect(700, b3, 100, 250);
+
+    r -= 0.2;
+    g -= 0.2;
+    b -= 0.2;
+
+    if (r < 2) {
+        r = 35;
+    }
+
+    if (g < 2) {
+        g = 155;
+    }
+
+    if (b < 2) {
+        b = 255;
+    }
 
     // Test if the cursor is over the box 
     if (mouseX > 0 && mouseX < 200) { //0
