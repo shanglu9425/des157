@@ -9,6 +9,10 @@ body {
     background-color: #F4F4F4;
 }
 
+a {
+    text-decoration: none;
+}
+
 .header {
     width: 88%;
     padding: 20px 6%;
@@ -127,6 +131,37 @@ header.header nav.nav ul li {
     content: "";
     clear: both;
     display: table;
+}
+
+.footer-section {
+    background: #404446;
+    color: #fff;
+    line-height: 1.6;
+    padding: 15px;
+}
+
+footer a {
+    color: white;
+    padding: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.blog-wrap {
+    min-height: 100%;
+    margin-bottom: -40px;
+}
+
+.page-wrap:after {
+    content: "";
+    display: block;
+}
+
+.footer-section,
+.page-wrap:after {
+    height: 40px;
 }
 
 
