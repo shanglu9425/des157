@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+body {
+    position: relative;
+}
+
 .form {
     max-width: 450px;
     position: relative;
@@ -153,9 +157,10 @@
 .paragraph {
     line-height: 30px;
     position: fixed;
-    top: 200px;
+    top: 100px;
     background-color: white;
     z-index: 100;
+    right: 550px;
 }
 
 .footer-section {
@@ -198,26 +203,26 @@
 @keyframes image {
     0% {
         padding-left: 0px;
-        transform: rotate(20deg) scale(1, 1);
+        transform: rotate(10deg) scale(1, 1);
     }
     25% {
         padding-left: 20px;
-        transform: rotate(-20deg) scale(1.5, 1.5);
+        transform: rotate(-10deg) scale(2, 2);
     }
     50% {
         padding-left: 40px;
-        transform: rotate(20deg) scale(1, 1);
+        transform: rotate(10deg) scale(1, 1);
     }
     70% {
         padding-left: 20px;
-        transform: rotate(-20deg) scale(1.5, 1.5);
+        transform: rotate(-10deg) scale(2, 2);
     }
     80% {
         padding-left: 40px;
-        transform: rotate(20deg) scale(1, 1);
+        transform: rotate(10deg) scale(1, 1);
     }
     100% {
         padding-left: 20px;
-        transform: rotate(-20deg) scale(1.5, 1.5);
+        transform: rotate(-10deg) scale(2, 2);
     }
 }
