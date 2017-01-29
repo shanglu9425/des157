@@ -3,48 +3,57 @@
 
 <head>
     <meta charset="utf-8">
-    <title>PORTAL</title>
+    <title>Mad-Libs</title>
     <link rel="stylesheet" href="stylesheet.css">
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.21/p5.js"></script>-->
 </head>
 
 <body>
+    <audio tabindex="0" id="beep-one" class="display-none" controls preload="auto">
+    <source src="bg-music.aac">
+</audio>
     <div class="flex-row">
-        <div class="image flex-1">
-            <img src="">
+        <h1 id="title">Let's sing! PPAP
+            <br /> Mad-Mad-The-Libs
+        </h1>
+        <div id="image" class="image flex-1">
+            <img src="ppap.gif" height="500px;">
         </div>
         <div id="input-form" class="form flex-1">
             <form name="f">
                 <div class="form-group">
-                    <label for="username">Username</label>
-                    <input class="form-input" name="test1" pattern="[a-z]{}" required="required" type="text">
+                    <label for="username">Favorite thing</label>
+                    <input class="form-input" name="test1" pattern="[A-Za-z]{1,50}" required="required" type="text" title="No number please">
                 </div>
                 <div class="form-group">
-                    <label for="username">Username</label>
-                    <input class="form-input" name="test2" required="required" type="text ">
+                    <label for="username ">Favorite fruit</label>
+                    <input class="form-input " name="test2" required="required" type="text">
                 </div>
                 <div class="form-group">
-                    <label for="username ">Username</label>
-                    <input class="form-input " name="test3" required="required" type="text ">
+                    <label for="username ">Favorite snack</label>
+                    <input class="form-input " name="test3" required="required" type="text">
                 </div>
-                <div class="form-group ">
-                    <label for="username ">Username</label>
-                    <input class="form-input" name="test4" required="required" type="text">
+                <div class="form-group">
+                    <label for="username ">Your name</label>
+                    <input class="form-input " name="test4" required="required" type="text">
                 </div>
-                <div class="form-group ">
+                <div class="form-group btn">
                     <input type="reset" value="reset">
                     <input type="submit" value="submit">
                 </div>
             </form>
         </div>
     </div>
-    <div id="paragraph" class="paragraph">
+    <div id="paragraph" class="paragraph" style="margin: 30px;">
         <p>
         </p>
     </div>
-
-    <script src="script.js"></script>
+    <footer class="footer-section">
+        <a href="https://validator.w3.org/check?uri=referer" target="_blank">Valid HTML 5</a>|<a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">Valid CSS</a> |
+        <a href="mailto:qinlu@ucdavis.edu" target="_top">Send Email</a>
+    </footer>
+    <script src="script.js "></script>
 </body>
 
 </html>
