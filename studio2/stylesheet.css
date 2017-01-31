@@ -144,7 +144,11 @@ body {
         transform: rotate(10deg);
         border: 30px solid yellowgreen;
     }
-    100% {
+    90% {
+        transform: rotate(-10deg);
+        border: 20px solid violet;
+    }
+    90% {
         transform: rotate(-10deg);
         border: 20px solid violet;
     }
@@ -221,8 +225,12 @@ body {
         padding-left: 40px;
         transform: rotate(10deg) scale(1, 1);
     }
-    100% {
+    90% {
         padding-left: 20px;
         transform: rotate(-10deg) scale(2, 2);
+    }
+    100% {
+        padding-left: 0px;
+        transform: rotate(-10deg) scale(1, 1);
     }
 }
