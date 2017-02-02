@@ -21,14 +21,6 @@ function process() {
         " I have " + userTest3 + " , I have " + userTest1 + "<br />" + "UH!!!" + "<br />" + userTest3 + userTest1 + "<br />" + "LET'S GO !!" + "<br />" + userTest1 + "-" +
         userTest2 + ", " + userTest3 + userTest1 + "<br />" + "UH!" + "<br />" + userTest1 + "-" + userTest3 + "-" + userTest2 + "-" + userTest1 + "<br />" + "written by " + userTest4;
     return false;
-
-    /*
-    var storyDiv = document.getElementById("paragraph");
-    var name = document.getElementById("name").value;
-    var adjective = document.getElementById("adjective").value;
-    var noun = document.getElementById("noun").value;
-    storyDiv.innerHTML = name + " married a " + adjective + " " + noun + "... So weird!";
-*/
 }
 
 function clear() {
