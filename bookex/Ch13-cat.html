@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>EX13</title>
+    <style>
+        * {
+            padding: auto;
+            margin: auto;
+            text-align: center;
+        }
+        
+        div {
+            margin: 0 auto;
+            width: 500px;
+            position: relative;
+            top: 400px;
+            height: 200px;
+            background-color: pink;
+        }
+        
+        #cat,
+        #hat {
+            position: absolute;
+            right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="hat.png" alt="hat" id="hat" height="71">
+        <img src="cat.png" alt="cat" id="cat" height="120">
+    </div>
+    <script>
+        var cat = document.querySelector('#cat');
+        var hat = document.querySelector('#hat');
+        var initialAngle = Math.PI;
+        var angle = 0,
+            lastTime = null;
+
+        function animate(time) {
+            if (lastTime != null) {
+                angle += (time - lastTime) * 0.0005
+            }
+            lastTime = time;
+            cat.style.top = (Math.sin(angle)) + "px";
+            cat.style.left = (Math.cos(angle)) + "px";
+            var hatAngle = angle + Math.PI;
+            hat.style.top = (Math.sin(initialAngle + angle) * 150) + "px";
+            hat.style.left = (Math.cos(initialAngle + angle) * 300) + "px";
+            requestAnimationFrame(animate);
+        }
+
+        requestAnimationFrame(animate);
+    </script>
+</body>
+
+</html>
