@@ -1,25 +1,71 @@
-body {}
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: burlywood;
+    animation: fadein 4s;
+    background-image: none;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 .image-container {
-    /*background-color: white;
-    color: white;
-    left: 0;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    transform: translateY(-50%);*/
     width: 500px;
     margin: auto;
     display: flex;
     justify-content: center;
     position: relative;
-    box-shadow: 0px 2px 18px 0px rgba(171, 171, 171, 1);
+    box-shadow: 0px 2px 18px 0px darkslategray;
     padding: 40px;
     margin-top: 50px;
     background: white;
+    animation: shakeThat 2s;
+    animation-delay: 2s;
+}
+
+@keyframes shakeThat {
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.image-container h3 {
+    position: absolute;
+    left: 5%;
+    top: 0;
+    font-size: 20pt;
+}
+
+.glasses {
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    top: 17%;
+    left: 52%;
+    border: 4px dashed darkcyan;
+    border-radius: 100%;
+    animation-name: spin;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.glasses:hover {
+    animation-name: spinBig;
 }
 
 .phone {
@@ -34,6 +80,28 @@ body {}
     animation-name: spin;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+}
+
+.cat {
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    top: 82%;
+    left: 52%;
+    border: 4px dashed dodgerblue;
+    border-radius: 100%;
+    animation-name: spin;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.cat:hover {
+    animation-name: spinBig;
+}
+
+.phone:hover {
+    animation-name: spinBig;
 }
 
 @keyframes spin {
@@ -87,6 +155,7 @@ body {}
     animation-name: spin;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+    z-index: 5;
 }
 
 .mac:hover {
@@ -124,12 +193,17 @@ header h1 {
     width: 30%;
     position: absolute;
     background-color: #000;
-    color: deeppink;
+    color: gold;
+    font-size: 30pt;
     display: none;
-    opacity: .85;
     left: 5%;
-    top: 5%;
+    top: 50%;
     cursor: pointer;
+    border: 10px solid gold;
+    animation-name: shake;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
 }
 
 #modalMac {
@@ -139,12 +213,75 @@ header h1 {
     width: 30%;
     position: absolute;
     background-color: #000;
-    color: deeppink;
+    color: gold;
     display: none;
-    opacity: .85;
-    left: 5%;
-    top: 5%;
+    right: 5%;
+    bottom: 5%;
     cursor: pointer;
+    border: 10px solid gold;
+    animation-name: shake;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    font-size: 30pt;
+}
+
+#modalGlasses {
+    max-width: 850px;
+    height: 300px;
+    margin: auto;
+    width: 30%;
+    position: absolute;
+    background-color: #000;
+    color: gold;
+    display: none;
+    right: 5%;
+    bottom: 5%;
+    cursor: pointer;
+    border: 10px solid gold;
+    animation-name: shake;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    font-size: 30pt;
+}
+
+#modalCat {
+    max-width: 850px;
+    height: 300px;
+    margin: auto;
+    width: 30%;
+    position: absolute;
+    background-color: #000;
+    color: gold;
+    display: none;
+    right: 5%;
+    bottom: 5%;
+    cursor: pointer;
+    border: 10px solid gold;
+    animation-name: shake;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    font-size: 30pt;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(5deg);
+    }
+    25% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(5deg);
+    }
 }
 
 #block {
@@ -159,6 +296,20 @@ header h1 {
 }
 
 #close1 {
+    position: absolute;
+    top: 5%;
+    right: 10px;
+    cursor: pointer;
+}
+
+#close3 {
+    position: absolute;
+    top: 5%;
+    right: 10px;
+    cursor: pointer;
+}
+
+#close4 {
     position: absolute;
     top: 5%;
     right: 10px;
