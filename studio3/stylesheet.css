@@ -1,6 +1,4 @@
-* {
-    box-sizing: border-box;
-}
+
 
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -200,7 +198,6 @@ header h1 {
     max-width: 850px;
     height: 300px;
     margin: auto;
-    width: 384px;
     position: absolute;
     background-color: #000;
     color: gold;
@@ -220,13 +217,12 @@ header h1 {
     max-width: 850px;
     height: 300px;
     margin: auto;
-    width: 384px;
     position: absolute;
     background-color: #000;
     color: gold;
     display: none;
-    right: 5%;
-    bottom: 5%;
+    left: 5%;
+    top: 10%;
     cursor: pointer;
     border: 10px solid gold;
     animation-name: shake;
@@ -240,13 +236,12 @@ header h1 {
     max-width: 850px;
     height: 300px;
     margin: auto;
-    width: 384px;
     position: absolute;
     background-color: #000;
     color: gold;
     display: none;
     right: 5%;
-    bottom: 5%;
+    top: 5%;
     cursor: pointer;
     border: 10px solid gold;
     animation-name: shake;
@@ -260,7 +255,6 @@ header h1 {
     max-width: 850px;
     height: 300px;
     margin: auto;
-    width: 384px;
     position: absolute;
     background-color: #000;
     color: gold;
@@ -331,7 +325,6 @@ header h1 {
     background: #404446;
     color: #fff;
     line-height: 1.6;
-    padding: 16px;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -342,4 +335,5 @@ footer a {
     color: white;
     padding: 10px;
     text-decoration: none;
+    display: inline-block;
 }
