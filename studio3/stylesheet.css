@@ -7,7 +7,11 @@ body {
     background-image: none;
     margin-bottom: -50px;
 }
-
+.fadeIn {
+    animation: fadein 3s;
+    animation-delay: 10s;
+    display: none;
+}
 a {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
 
@@ -138,13 +142,13 @@ a {
         transform: scale(1, 1);
     }
     25% {
-        transform: scale(2, 2);
+        transform: scale(1.2, 1.2);
     }
     50% {
         transform: scale(1, 1);
     }
     75% {
-        transform: scale(2, 2);
+        transform: scale(1.2, 1.2);
     }
     100% {
         transform: scale(1, 1);
@@ -153,10 +157,10 @@ a {
 
 .mac {
     position: absolute;
-    height: 70px;
-    width: 70px;
+    height: 80px;
+    width: 80px;
     cursor: pointer;
-    top: 45%;
+    top: 40%;
     left: 44%;
     border: 4px dashed white;
     border-radius: 100%;

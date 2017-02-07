@@ -140,6 +140,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
     })
 
 
+var containerBox = document.getElementById('fadeInn');
+
+containerBox.addEventListener('animationend', function() {
+  var fade = document.getElementById('fade');
+  console.log("Transition ended!");
+  console.log(fade);
+  fade.style.display = "block";
+});
+
 
 });
 
