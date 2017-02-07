@@ -341,4 +341,5 @@ header h1 {
 footer a {
     color: white;
     padding: 10px;
+    text-decoration: none;
 }
