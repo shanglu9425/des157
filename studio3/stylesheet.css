@@ -1,9 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: burlywood;
     animation: fadein 4s;
     background-image: none;
+    margin-bottom: -50px;
 }
+
+a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
 
 @keyframes fadein {
     from {
@@ -49,7 +57,9 @@ body {
     top: 0;
     font-size: 20pt;
 }
-
+#me {
+    height: 500px;
+}
 .glasses {
     position: absolute;
     height: 70px;
@@ -314,4 +324,21 @@ header h1 {
     top: 5%;
     right: 10px;
     cursor: pointer;
+}
+
+.footer-section {
+    text-align: center;
+    background: #404446;
+    color: #fff;
+    line-height: 1.6;
+    padding: 16px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+}
+footer a {
+    color: white;
+    padding: 10px;
 }
