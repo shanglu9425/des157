@@ -44,15 +44,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
         this.style.display = "none";
         var meBg = document.getElementById('me');
         meBg.src = imgs[4];
-        this.innerHTML = '';
     })
     test1('cat').addEventListener('mouseover', function() {
         this.style.textAlign = "center";
         this.style.color = "dodgerblue";
-        this.innerHTML = '<h2>' + "click" + '</h2>';
+        var click = document.getElementById('clickmeC');
+        click.style.display = "block";
     })
     test1('cat').addEventListener('mouseout', function() {
-        this.innerHTML = '';
+        var click = document.getElementById('clickmeC');
+        click.style.display = "none";
     })
 
 
@@ -63,15 +64,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
         getImage('glassesImage').src = imgs[7];
         var meBg = document.getElementById('me');
         meBg.src = imgs[3];
-        this.innerHTML = '';
     })
+
     test1('glasses').addEventListener('mouseover', function() {
         this.style.textAlign = "center";
         this.style.color = "darkcyan";
-        this.innerHTML = '<h2>' + "click" + '</h2>';
+        var click = document.getElementById('clickmeG');
+        click.style.display = "block";
     })
     test1('glasses').addEventListener('mouseout', function() {
-        this.innerHTML = '';
+        var click = document.getElementById('clickmeG');
+        click.style.display = "none";
     })
 
 
@@ -83,15 +86,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
         getImage('macImage').src = imgs[6];
         var meBg = document.getElementById('me');
         meBg.src = imgs[2];
-        this.innerHTML = '';
     })
     test1('mac').addEventListener('mouseover', function() {
+        var click = document.getElementById('clickmeM');
         this.style.textAlign = "center";
         this.style.color = "white";
-        this.innerHTML = '<h2>' + "click" + '</h2>';
+        click.style.display = "block";
     })
     test1('mac').addEventListener('mouseout', function() {
-        this.innerHTML = '';
+        var click = document.getElementById('clickmeM');
+        click.style.display = "none";
     })
 
     /* phone modal */
@@ -106,10 +110,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
     test1('phone').addEventListener('mouseover', function() {
         this.style.textAlign = "center";
         this.style.color = "orange";
-        this.innerHTML = '<h2>' + "click" + '</h2>';
+        var click = document.getElementById('clickmeP');
+        click.style.display = "block";
     })
     test1('phone').addEventListener('mouseout', function() {
-        this.innerHTML = '';
+        var click = document.getElementById('clickmeP');
+        click.style.display = "none";
     })
 
     test1('close1').addEventListener('click', function() {
@@ -140,14 +146,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
     })
 
 
-var containerBox = document.getElementById('fadeInn');
+    var containerBox = document.getElementById('fadeInn');
 
-containerBox.addEventListener('animationend', function() {
-  var fade = document.getElementById('fade');
-  console.log("Transition ended!");
-  console.log(fade);
-  fade.style.display = "block";
-});
+    containerBox.addEventListener('animationend', function() {
+        var fade = document.getElementById('fade');
+        console.log("Transition ended!");
+        console.log(fade);
+        fade.style.display = "block";
+    });
 
 
 });
