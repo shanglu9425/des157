@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>EX14</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px
+        }
+        
+        body {
+            background-color: white;
+            color: white;
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 12px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: black;
+        }
+        
+        .circle {
+            animation: pulse 1s ease 0s infinite normal;
+            background: #ffffff;
+            height: 8px;
+            width: 8px;
+            border-radius: 4px;
+            position: absolute;
+        }
+        
+        .circle1 {
+            animation: pulse 1s ease 0s infinite normal;
+            background: #ffffff;
+            height: 13px;
+            width: 13px;
+            border-radius: 4px;
+            position: absolute;
+        }
+        
+        .circle2 {
+            animation: pulse 1s ease 0s infinite normal;
+            background: #ffffff;
+            height: 18px;
+            width: 18px;
+            border-radius: 4px;
+            position: absolute;
+        }
+        
+        @keyframes pulse {
+            0% {
+                background-color: yellow;
+                transform: scale(1);
+            }
+            25% {
+                transform: scale(2);
+            }
+            100% {
+                background-color: red;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>EX.14</h1>
+    <script>
+        var elements = [];
+        var classes = ["circle", "circle1", "circle2"];
+        var current = 0;
+        var max = 30;
+
+        for (var i = 0; i < max; i++) {
+            var e = document.createElement("div");
+            var c = Math.floor(Math.random() * classes.length);
+            e.className = classes[c];
+            elements.push(e);
+        }
+
+        addEventListener("mousemove", function(event) {
+            var elem = elements[current];
+            elem.style.left = (event.pageX - 4) + "px";
+            elem.style.top = (event.pageY - 4) + "px";
+            document.body.appendChild(elem);
+            if (current < (max - 1)) {
+                current += 1;
+            } else {
+                current = 0;
+            }
+        });
+    </script>
+</body>
+
+</html>
