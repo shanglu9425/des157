@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(event) {
+
     var numberOfDays = document.getElementById('numberOfDays');
     var today = new Date(); // today's date
     var patty = new Date(2017, 1, 14); // months are 0-11
@@ -44,9 +45,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
             body.classList.add("slideLeft");
             console.log("123");
         } else if (newScrollPosition > 10) {
-            var audio = document.getElementById('beep-one')
+            var audio = document.getElementById('beep-one');
             audio.play();
             audio.loop = true;
+            console.log("no music?")
         } else {
             //downward - code here
             var header = document.getElementById('scroller');
