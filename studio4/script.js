@@ -62,26 +62,28 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
     var tipTimer;
-    btnWoman = document.getElementById('btnWoman');
-    btnWoman.addEventListener('click', function() {
-        tipTimer = setTimeout(showModal, 1000);
-    });
-
-    function showModal() {
-        document.getElementById('modal').classList.add("visible");
-        document.getElementById('modal').classList.remove("nonVisible");
-    }
-
-
-
-    var btnClose = document.getElementById('close');
-    btnClose.addEventListener('click', closeModal);
-
-    function closeModal() {
-        document.getElementById('modal').classList.add("nonVisible");
-    }
 
     //btnMan
+    btnWoman = document.getElementById('btnWoman');
+    btnWoman.addEventListener('click', function() {
+        tipTimer = setTimeout(showModalWoman, 1000);
+    });
+
+    function showModalWoman() {
+        document.getElementById('modal2').classList.add("visible");
+        document.getElementById('modal2').classList.remove("nonVisible");
+    }
+
+    function closeModalWoman() {
+        document.getElementById('modal2').classList.add("nonVisible");
+    }
+
+    var btnCloseWoman = document.getElementById('close2');
+    btnCloseWoman.addEventListener('click', closeModalWoman);
+
+
+
+    //btnWoman
     btnMn = document.getElementById('btnMan');
     btnMan.addEventListener('click', function() {
         tipTimer = setTimeout(showModalMan, 1000);
