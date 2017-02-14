@@ -17,14 +17,16 @@
         <nav class="nav">
             <ul>
                 <li class="hide"><a href="../index.html">PORTAL</a></li>
-                <li><a href="pages/blog.html">CALENDAR</a></li>
-                <li><a href="http://www.mr-shangster.com">GIFT</a></li>
-                <li class="hide"><a href="https://www.linkedin.com/in/shang-lu-683574a3">KEEP CALM</a></li>
+                <li><a href="#calendar">CALENDAR</a></li>
+                <li><a href="#gifts">GIFT</a></li>
+                <li class="hide"><a href="#calm">KEEP CALM</a></li>
             </ul>
         </nav>
+        <audio tabindex="0" id="beep-one" class="display-none" controls preload="auto">
+    <source src="music.mp3">
     </header>
 
-    <div class="calendar flex-row flex-center">
+    <div id="calendar" class="calendar flex-row flex-center">
         <div class="calendarContianer flex-column">
             <div class="calendarPin-right">
             </div>
@@ -35,7 +37,7 @@
             <span class="subtitle">DAYS</span>
         </div>
     </div>
-    <div class="pageTwo">
+    <div id="gifts" class="pageTwo">
         <div id="modal" class="modal">
             <i id="close" class="icon-close"></i>
             <div class="image-container">
@@ -64,20 +66,25 @@
             <button id="btnMan" class="btn btn-primary">GIFT FOR HIM</button>
         </div>
     </div>
-    <div class="pageThree">
+    <div id="calm" class="pageThree">
         <div id="modal-gif" class="modal-gif" style="text-align: center;font-size: 40pt;line-height: 1.5;font-weight: bold;padding-top: 50px;">
-            <span>KEEP CALM</span>
+            <span>KEEP</span>
             <br>
-            <span>AND</span>
+            <span>CALM</span>
             <br>
-            <span>ROCKE</span>
+            <span class="small">AND</span>
             <br>
-            <span>YOUR</span>
+            <span>STAY</span>
             <br>
-            <span>VALENTINE</span>
+            <span class="red">VALENTINE</span>
 
         </div>
     </div>
+
+    <footer class="footer-section">
+        <a href="https://validator.w3.org/check?uri=referer" target="_blank">Valid HTML 5</a>|<a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">Valid CSS</a> |
+        <a href="../index.html">Portal</a>
+    </footer>
 </body>
 
 

@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
      })*/
 
-    var lastScrollPosition = 0;
+    var lastScrollPosition;
     window.onscroll = function() {
         var newScrollPosition = window.scrollY;
 
@@ -34,7 +34,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
             //upward - code here
             var header = document.getElementById('scroller');
             header.classList.add("scrolledFade");
-        } else if (lastScrollPosition > 1300) {
+            console.log("yuoyo");
+        } else if (lastScrollPosition > 1000) {
             var calm = document.getElementById('modal-gif');
             calm.classList.add("hatchAnimation");
             console.log("fdsafsdaf");
@@ -42,11 +43,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
             var body = document.getElementById('pageTwo');
             body.classList.add("slideLeft");
             console.log("123");
+        } else if (newScrollPosition > 10) {
+            var audio = document.getElementById('beep-one')
+            audio.play();
+            audio.loop = true;
         } else {
             //downward - code here
             var header = document.getElementById('scroller');
             header.classList.add("scrolled");
             header.classList.remove("scrolledFade");
+            console.log("gagaaaga");
         }
         console.log(newScrollPosition);
         lastScrollPosition = newScrollPosition;

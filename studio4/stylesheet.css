@@ -180,13 +180,14 @@ footer a {
 }
 
 .footer-section {
+    text-align: center;
     background: #404446;
     color: #fff;
     line-height: 1.6;
     padding: 16px;
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -50px;
     height: 50px;
     width: 100%;
 }
@@ -311,9 +312,23 @@ video {
 }
 
 .pageTwo {
+    background: linear-gradient(112deg, #ff5757, #ffbebe, #8050f5);
+    background-size: 600% 600%;
     position: relative;
     height: 100vh;
-    background-image: linear-gradient(-180deg, #FF5757 0%, #7C2626 80%, #FF8888 100%);
+    animation: AnimationName 18s ease infinite;
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 97%
+    }
+    50% {
+        background-position: 100% 4%
+    }
+    100% {
+        background-position: 0% 97%
+    }
 }
 
 #pageTwo {
@@ -333,10 +348,6 @@ video {
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
     border: 1px solid transparent;
     padding: .5rem 1rem;
     font-size: 1rem;
@@ -395,11 +406,11 @@ video {
 
 .modal-gif {
     height: 500px;
-    width: 70%;
+    width: 60%;
     border-radius: 20px;
     background-color: white;
     position: absolute;
-    left: 15%;
+    left: 20%;
     top: 70px;
     box-shadow: 0px 5px 10px 3px rgba(163, 163, 163, 0.50);
     opacity: 0;
@@ -476,7 +487,6 @@ video {
 }
 
 .nonVisible {
-    visibility: none;
     opacity: 0;
     animation: fadeout 0.25s;
     z-index: 1;
@@ -532,4 +542,16 @@ video {
     100% {
         transform: rotate(0deg);
     }
+}
+
+.small {
+    font-size: 20pt;
+}
+
+.red {
+    color: #FF8888;
+}
+
+.display-none {
+    display: none;
 }
