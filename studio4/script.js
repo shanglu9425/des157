@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             var calm = document.getElementById('modal-gif');
             calm.classList.add("hatchAnimation");
             console.log("fdsafsdaf");
-        } else if (newScrollPosition > 640) {
+        } else if (newScrollPosition > 600) {
             var body = document.getElementById('pageTwo');
             body.classList.add("slideLeft");
             console.log("123");
