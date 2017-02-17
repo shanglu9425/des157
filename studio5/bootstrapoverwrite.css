@@ -1,0 +1,32 @@
+.row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.wave {
+    padding: 20px;
+    /*transform: scale(0.8);*/
+    background: linear-gradient(112deg, #ff5757, #ffbebe, #8050f5);
+    background-size: 600% 600%;
+    position: relative;
+    animation: AnimationName 18s ease infinite;
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 97%
+    }
+    50% {
+        background-position: 100% 4%
+    }
+    100% {
+        background-position: 0% 97%
+    }
+}
