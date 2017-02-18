@@ -55,8 +55,19 @@ $(document).ready(function() {
 
     $(function() {
         $('#start').on('click', function() {
-            alert('hello');
-            $(this).addClass('classOne');
+            //alert('hello');
+            $('.tape').addClass('tapeAnimate');
+            $('.circle').addClass('spin');
+            $('.wave').addClass('opacity');
+
+        });
+    });
+
+    $(function() {
+        $('#stop').on('click', function() {
+            //alert('hello');
+            $('.tape').removeClass('tapeAnimate');
+            $('.circle').removeClass('spin');
         });
     });
 
