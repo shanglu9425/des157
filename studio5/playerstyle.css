@@ -4,6 +4,7 @@ body {
     background-color: gainsboro !important;
     background-image: radial-gradient(50% 119%, rgba(255, 255, 255, 0.43) 50%, rgba(255, 255, 255, 0.11) 100%);
 }
+
 .opacity {
     opacity: 1 !important;
     transition: 3s;
@@ -61,13 +62,20 @@ body {
     border-radius: 21px;
 }
 
+.btn-volume {
+    height: 25px !important;
+    width: 25px !important;
+    align-self: center;
+    margin: 0px 10px !important;
+}
+
 .tape {
     align-self: center;
     position: relative;
     z-index: 1;
     left: 30px;
     transition-timing-function: linear;
-transition: 1s;
+    transition: 1s;
 }
 
 .tape img {
@@ -75,18 +83,44 @@ transition: 1s;
     height: 350px;
 }
 
-
 .tapeAnimate {
     transition-timing-function: linear;
-transition: 1s;
+    transition: 1s;
     left: -175px;
 }
 
 .spin {
     transform: rotate(0deg);
     transition: 1s;
-   animation:spin 4s linear infinite;
-   animation-delay: 0.25s;
+    animation: spin 4s linear infinite;
+    animation-delay: 0.25s;
 }
 
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.wave {
+    opacity: 0;
+    padding: 20px;
+    /*transform: scale(0.8);*/
+    background: linear-gradient(112deg, #ff5757, #ffbebe, #8050f5);
+    background-size: 600% 600%;
+    position: relative;
+    animation: AnimationName 18s ease infinite;
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 97%
+    }
+    50% {
+        background-position: 100% 4%
+    }
+    100% {
+        background-position: 0% 97%
+    }
+}

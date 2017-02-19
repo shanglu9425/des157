@@ -24,9 +24,14 @@
                 </div>
                 <div class="playerModalFooter">
                     <div class="button-group">
-                        <div></div>
-                        <button id="start" onclick="document.getElementById('audioElement').play()" class="btn btn-play" class="btn btn-play">start</button>
-                        <button id="stop" onclick="document.getElementById('audioElement').pause()" class="btn btn-play">STOP</button>
+                        <div class="flex-row">
+                            <button id="start" onclick="document.getElementById('audioElement').play()" class="btn btn-play" class="btn btn-play">start</button>
+                            <button id="stop" onclick="document.getElementById('audioElement').pause()" class="btn btn-play">STOP</button>
+                        </div>
+                        <div class="flex-row" style="position: relative;left: 60px;">
+                            <button id="increase" onclick="document.getElementById('audioElement').volume+=0.1" class="btn btn-play btn-volume">&#43;</button>
+                            <button id="decrease" onclick="document.getElementById('audioElement').volume-=0.1" class="btn btn-play btn-volume">&minus;</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -45,13 +50,7 @@ left: 59px;">
     </div>
     <aside class="sidebar-nav">
     </aside>
-    <audio id="audioElement" src="music.mp3"></audio>
-    <div>
-        <button>Play the Audio</button>
-        <button>Pause the Audio</button>
-        <button onclick="document.getElementById('audioElement').volume+=0.1">Increase Volume</button>
-        <button onclick="document.getElementById('audioElement').volume-=0.1">Decrease Volume</button>
-    </div>
+    <audio id="audioElement" src="music2.mp3"></audio>
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 

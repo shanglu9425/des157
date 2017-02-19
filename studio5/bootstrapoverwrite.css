@@ -10,24 +10,21 @@
     margin-left: auto;
 }
 
-.wave {
-    opacity: 0;
-    padding: 20px;
-    /*transform: scale(0.8);*/
-    background: linear-gradient(112deg, #ff5757, #ffbebe, #8050f5);
-    background-size: 600% 600%;
-    position: relative;
-    animation: AnimationName 18s ease infinite;
+.btn {
+    border: none;
 }
 
-@keyframes AnimationName {
-    0% {
-        background-position: 0% 97%
-    }
-    50% {
-        background-position: 100% 4%
-    }
-    100% {
-        background-position: 0% 97%
-    }
+.btn:hover {
+    background-color: #F9F9F9;
+    cursor: pointer;
+}
+
+.btn:active {
+    /*box-shadow: 0 1px #95a5a6;*/
+    background-color: #F3F1F1;
+    transform: translateY(0.1px);
+}
+
+.none {
+    display: none;
 }
