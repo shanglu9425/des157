@@ -36,9 +36,9 @@ body {
 }
 
 .playerModalFooter {
-    align-self: center;
     padding: 15px;
     display: flex;
+    justify-content: space-between;
 }
 
 .button-group {
@@ -49,7 +49,7 @@ body {
 
 .button-group .btn {
     margin: 0px 50px;
-    width: 80px;
+    width: 70px;
     height: 40px;
 }
 
@@ -60,6 +60,23 @@ body {
     background: #FFFFFF;
     box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.50);
     border-radius: 21px;
+}
+
+.btn-play .start-icon {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 10px 0 10px 20px;
+    border-color: transparent transparent transparent black;
+    margin: 10px auto;
+}
+
+.btn-play .pause-icon {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 10px 0 10px 20px;
+    margin: 10px auto;
 }
 
 .btn-volume {

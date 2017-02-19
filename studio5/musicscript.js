@@ -1,4 +1,16 @@
 $(document).ready(function() {
+    //musicpreload
+
+
+
+
+
+
+
+
+
+
+    //visulaization 
     var audioCtx = new(window.AudioContext || window.webkitAudioContext)();
     var audioElement = document.getElementById('audioElement');
     var audioSrc = audioCtx.createMediaElementSource(audioElement);
@@ -53,23 +65,30 @@ $(document).ready(function() {
     // Run the loop
     renderChart();
 
-    $(function() {
-        $('#start').on('click', function() {
-            //alert('hello');
-            $('.tape').addClass('tapeAnimate');
-            $('.circle').addClass('spin');
-            $('.wave').addClass('opacity');
 
-        });
-    });
+    function startMusic() {
+        //alert('hello');
+        document.getElementById('audioElement').play();
+        $('.tape').addClass('tapeAnimate');
+        $('.circle').addClass('spin');
+        $('.wave').addClass('opacity');
+        $('#btnIcon').removeClass('start-icon');
+        $('#btnIcon').addClass('pause-icon');
+        $(this).one('click', stopMusic);
 
-    $(function() {
-        $('#stop').on('click', function() {
-            //alert('hello');
-            $('.tape').removeClass('tapeAnimate');
-            $('.circle').removeClass('spin');
-        });
-    });
+    };
 
 
+    function stopMusic() {
+        //alert('hello');
+        document.getElementById('audioElement').pause();
+        $('.tape').removeClass('tapeAnimate');
+        $('.circle').removeClass('spin');
+        $('.wave').removeClass('opacity');
+        $('#btnIcon').removeClass('pause-icon');
+        $('#btnIcon').addClass('start-icon');
+        $(this).one('click', startMusic);
+    };
+
+    $('#start').one('click', startMusic);
 });
