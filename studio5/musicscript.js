@@ -74,7 +74,10 @@ $(document).ready(function() {
         $('.wave').addClass('opacity');
         $('#btnIcon').removeClass('start-icon');
         $('#btnIcon').addClass('pause-icon');
+        $('.lightBtnPlay').addClass('blink');
         $(this).one('click', stopMusic);
+        $('#indicator').text("PLAYING");
+        $('.playerModal').addClass('expand');
 
     };
 
@@ -86,9 +89,22 @@ $(document).ready(function() {
         $('.circle').removeClass('spin');
         $('.wave').removeClass('opacity');
         $('#btnIcon').removeClass('pause-icon');
+        $('.lightBtnPlay').removeClass('blink');
         $('#btnIcon').addClass('start-icon');
         $(this).one('click', startMusic);
+        $('#indicator').text("");
+        $('.playerModal').removeClass('expand');
+
     };
 
     $('#start').one('click', startMusic);
+
+
+
+    var player = document.getElementById('audioElement');
+    player.addEventListener("timeupdate", function() {
+        var currentTime = player.currentTime;
+        var duration = player.duration;
+        $('.hp_range').stop(true, true).animate({ 'width': (currentTime + .25) / duration * 100 + '%' }, 250, 'linear');
+    });
 });

@@ -23,6 +23,13 @@ body {
     flex-direction: column;
     flex: 0 1 600px;
     z-index: 9999;
+    transition: 1.1s;
+}
+
+.expand {
+    transition-timing-function: linear;
+    transition: 1.1s;
+    flex: 0 1 800px !important;
 }
 
 .musicWaveContainer {
@@ -53,13 +60,12 @@ body {
     height: 40px;
 }
 
-.button-group .btn-play:hover {}
-
 .btn-play {
     /* Rectangle 7: */
     background: #FFFFFF;
     box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.50);
     border-radius: 21px;
+    width: 45px;
 }
 
 .btn-play .start-icon {
@@ -69,6 +75,7 @@ body {
     border-width: 10px 0 10px 20px;
     border-color: transparent transparent transparent black;
     margin: 10px auto;
+    display: block;
 }
 
 .btn-play .pause-icon {
@@ -77,6 +84,7 @@ body {
     border-style: solid;
     border-width: 10px 0 10px 20px;
     margin: 10px auto;
+    display: block;
 }
 
 .btn-volume {
@@ -140,4 +148,72 @@ body {
     100% {
         background-position: 0% 97%
     }
+}
+
+.light {
+    display: inherit;
+    position: absolute;
+    top: 13px;
+    left: 20px;
+}
+
+.lightBtnPlay {
+    position: absolute;
+    left: 2.5px;
+    background: white;
+    height: 15px;
+    width: 15px;
+    top: 2.5px;
+    border-radius: 10px;
+}
+
+.blink {
+    animation: blink 6s linear infinite;
+}
+
+#indicator {
+    color: #424242;
+}
+
+@keyframes blink {
+    0% {
+        background: white;
+    }
+    25% {
+        background: #FF7575;
+    }
+    50% {
+        background: white;
+    }
+    75% {
+        background: #FF7575;
+    }
+    100% {
+        background: white;
+    }
+}
+
+.lightBtn {
+    /* Oval: */
+    background: #FFFFFF;
+    box-shadow: 0px 0px 2px 0px rgba(95, 95, 95, 0.50);
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.circle1 {
+    height: 75px !important;
+    position: absolute;
+    top: 68px;
+    left: 59px;
+}
+
+.circle2 {
+    height: 75px !important;
+    position: absolute;
+    top: 208px;
+    left: 59px;
 }

@@ -28,3 +28,17 @@
 .none {
     display: none;
 }
+
+.hp_slide {
+    width: 100%;
+    background: #F1EFEF;
+    height: 9px;
+    border-radius: 20px;
+}
+
+.hp_range {
+    width: 0;
+    background: #424242;
+    height: 9px;
+    border-radius: 20px;
+}
