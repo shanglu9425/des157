@@ -6,6 +6,8 @@
     <title>PORTAL</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="lib/html5-qrcode.js"></script>
+    <script src="lib/html5-qrcode.min.js"></script>
+    <script src="lib/jsqrcode-combined.min.js"></script>
     <script src="script.js"></script>
 
 </head>
@@ -14,7 +16,8 @@
     <div id="reader" style="width:300px;height:250px"></div>  
     <script>
     $('#reader').html5_qrcode(function(data){  
-            window.location = "http://www.yoururl.com";
+            // do something when code is read  
+            console.log ("hi");
         },  
         function(error){  
             //show read errors   
