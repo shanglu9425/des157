@@ -1,0 +1,12 @@
+.camera {
+    position: fixed;
+    right: 20px;
+}
+
+.nav-header-blue {
+    background-color: #2196f3 !important;
+}
+
+.page-title {
+    font-size: 15px !important;
+}
