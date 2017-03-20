@@ -44,7 +44,7 @@ div.calendar {
 
 	-webkit-backface-visibility:hidden;
   
-  margin:40px auto;
+  margin:50px auto auto auto;
 }
 
 div.calendar h1 {
