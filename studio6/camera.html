@@ -21,7 +21,9 @@
   <script type="text/javascript">
   $(document).ready(function(){
     $('#reader').html5_qrcode(function(data){
-        $('#read').html(data);
+        //$('#read').html(data);
+        alert('解析成功啦')
+        alert(data);
         window.location.href = data;
       },
       function(error){
@@ -59,21 +61,27 @@
         <!-- sidenav -->
     <nav class="nav-header-blue" style="position: fixed;">
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo page-title">Home1</a>
+      <a href="#!" class="brand-logo page-title">Home</a>
       <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
     </div>
   </nav>
+<div class="center" id="reader" style="width:300px;height:250px; background:red;">
+  <video id="html5_qrcode_video" height="250px" width="300px"></video>
+  <canvas id="qr-canvas" width="298px" height="248px" style="display:none;"></canvas>
+</div>
+
         </div>
     </div>
 
+
+
+
+<!-- side nav -->
+        
+
+
+
 </header>
-
-
-<div class="center" id="reader" style="width:100%;height:100%; background:red;">
-  <video id="html5_qrcode_video" height="100%" width="100%"></video>
-  <canvas id="qr-canvas" width="100%" height="100%" style="display:none;"></canvas>
-</div>
-
 
 
 
