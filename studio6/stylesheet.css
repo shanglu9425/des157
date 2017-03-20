@@ -1,6 +1,7 @@
 .camera {
     position: fixed;
     right: 20px;
+    top: 85%;
 }
 
 .nav-header-blue {
