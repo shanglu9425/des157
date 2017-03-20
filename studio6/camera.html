@@ -16,6 +16,24 @@
     <!-- font awsome -->
     <script src="https://use.fontawesome.com/b59add1022.js"></script>
     <script src="script.js"></script>
+    <script src="jquery-1.9.1.js"></script>
+  <script src="html5-qrcode.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $('#reader').html5_qrcode(function(data){
+        //$('#read').html(data);
+        alert('解析成功啦')
+        alert(data);
+        window.location.href = data;
+      },
+      function(error){
+        $('#read_error').html(error);
+      }, function(videoError){
+        $('#vid_error').html(videoError);
+      }
+    );
+  });
+</script>
 
 </head>
 
@@ -47,19 +65,12 @@
       <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
     </div>
   </nav>
-  <div style="display: flex;position: relative;margin-top:56px;">
-    <div style="flex: 1;">
-       <div class="calendar">
-        <h1 class="month"></h1>
-        <p class="day"></p>
-    </div>
-      <img src="background.jpg" style="width: 100%;">
-    </div>
+  <div class="center" id="reader" style="width:100%;height:100%; background:red;margin-top: 57px;">
+    <video id="html5_qrcode_video" height="1005" width="1005"></video>
+    <canvas id="qr-canvas" width="50%" height="50%" style="display:none;"></canvas>
   </div>
-  <a class="btn-floating btn-large waves-effect waves-light red camera"><i class="fa fa-camera" aria-hidden="true"></i>
-</a>
-        </div>
-    </div>
+  </div>
+</div>
 
 
 
