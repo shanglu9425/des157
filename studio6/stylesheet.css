@@ -8,9 +8,62 @@
 }
 
 .page-title {
-    font-size: 30px !important;
+    font-size: 15px !important;
 }
 
 .a {
     font-size: 20px !important;
+}
+
+.side-nav .divider {
+    margin: 8px 0 8px 0 !important;
+}
+
+
+/* test */
+
+div.calendar {
+    border:5px solid #e3f2fd !important;
+    position: absolute;
+    left: 50px;
+	height:120px;
+	width:130px;
+    color: black;
+  
+	background-color:white;
+	text-align: center;
+
+	border-radius: 	5px;
+
+	box-shadow: 0 0 20px rgba(0,0,0,0.6);
+
+	background-image:	-webkit-radial-gradient(center, #eee, #fff);
+	background-image:	-moz-radial-gradient(center, #eee, #fff);
+
+
+	-webkit-backface-visibility:hidden;
+  
+  margin:50px auto;
+}
+
+div.calendar h1 {
+	margin:0;
+	text-align: center;
+	color:black;
+	font-style: bold;
+	font-size: 1em;
+	padding:10px;
+	-webkit-border-radius:	5px 5px 0 0;
+	-moz-border-radius:		5px 5px 0 0;
+	-ms-border-radius:		5px 5px 0 0;
+	-o-border-radius:		5px 5px 0 0;
+	border-radius: 			5px 5px 0 0;
+}
+
+div.calendar p {
+	font-size: 3em;
+	line-height: 0%;
+	color:black;
+	font-weight: bold;
+    margin: 30px;
 }
