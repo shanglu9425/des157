@@ -31,6 +31,7 @@ html {
 }
 
 body {
+    border-color: #E2F2FE !important;
     margin: 0px;
     font-family: 'NovecentowideLightBold', 'Helvetica', 'Arial', sans-serif;
     font-size: 14px;

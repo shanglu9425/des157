@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>QR Scanny</title>
-    <link rel="stylesheet" href="stylesheet.css">
+     <link rel="stylesheet" href="stylesheet.css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
@@ -16,7 +16,6 @@
     <!-- font awsome -->
     <script src="https://use.fontawesome.com/b59add1022.js"></script>
     <script src="script.js"></script>
-    <script src="jquery-1.9.1.js"></script>
   <script src="html5-qrcode.js"></script>
   <script type="text/javascript">
   $(document).ready(function(){
@@ -33,11 +32,10 @@
     );
   });
 </script>
-
 </head>
 
 
-<body>
+<body class="fadein-body" >
 <header>
     <div class="row">
         <div class="col s12 m12 l12" style="padding: 0px;">
@@ -52,7 +50,7 @@
           </div></li>
          <li><a class="waves-effect" href="#!">My Profile</a></li>
           <li><div class="divider"></div></li>
-          <li><a class="waves-effect" href="#!">Home</a></li>
+          <li><a class="waves-effect" href="index.html">Home</a></li>
           <li><div class="divider"></div></li>
           <li><a class="waves-effect" href="#!">Guidence</a></li>
           <li><div class="divider"></div></li>
@@ -68,6 +66,7 @@
   <video id="html5_qrcode_video" height="100%" width="100%"></video>
   <canvas id="qr-canvas" width="298px" height="248px" style="display:none;"></canvas>
 </div>
+<h6 class="qrcode-scan"><i class="fa fa-camera" aria-hidden="true"></i>Scan Product's QR Right Here</h6>
 
         </div>
     </div>

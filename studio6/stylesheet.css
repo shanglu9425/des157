@@ -6,6 +6,7 @@
 
 .nav-header-blue {
     background-color: #2196f3 !important;
+    z-index: 9999;
 }
 
 .page-title {
@@ -26,7 +27,7 @@
 div.calendar {
     border:5px solid #e3f2fd !important;
     position: absolute;
-    left: 50px;
+    left: 25px;
 	height:120px;
 	width:130px;
     color: black;
@@ -53,12 +54,8 @@ div.calendar h1 {
 	color:black;
 	font-style: bold;
 	font-size: 1em;
-	padding:10px;
-	-webkit-border-radius:	5px 5px 0 0;
-	-moz-border-radius:		5px 5px 0 0;
-	-ms-border-radius:		5px 5px 0 0;
-	-o-border-radius:		5px 5px 0 0;
-	border-radius: 			5px 5px 0 0;
+	padding:20px 10px 0px 10px;
+	border-radius:5px 5px 0 0;
 }
 
 div.calendar p {
@@ -67,4 +64,40 @@ div.calendar p {
 	color:black;
 	font-weight: bold;
     margin: 30px;
+}
+
+
+.qrcode-scan {
+    text-align: center;
+    padding-top: 40%;
+    animation: fade 5s;
+}
+
+
+.qrcode-scan i {
+    padding: 5px;
+}
+
+
+body {
+    background-color:#E2F2FE;
+}
+.fadein-body {
+     animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.center-column {
+    width: 91.6666666667%;
+    margin: auto;
+    padding: 0 .75rem;
+    min-height: 1px;
 }
