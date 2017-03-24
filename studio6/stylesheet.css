@@ -25,47 +25,35 @@
 /* test */
 
 div.calendar {
-    border:5px solid #e3f2fd !important;
+    border: 5px solid #e3f2fd !important;
     position: absolute;
     left: 25px;
-	height:120px;
-	width:130px;
+    height: 120px;
+    width: 130px;
     color: black;
-  
-	background-color:white;
-	text-align: center;
-
-	border-radius: 	5px;
-
-	box-shadow: 0 0 20px rgba(0,0,0,0.6);
-
-	background-image:	-webkit-radial-gradient(center, #eee, #fff);
-	background-image:	-moz-radial-gradient(center, #eee, #fff);
-
-
-	-webkit-backface-visibility:hidden;
-  
-  margin:40px auto auto auto;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    margin: 40px auto auto auto;
 }
 
 div.calendar h1 {
-	margin:0;
-	text-align: center;
-	color:black;
-	font-style: bold;
-	font-size: 1em;
-	padding:20px 10px 0px 10px;
-	border-radius:5px 5px 0 0;
+    margin: 0;
+    text-align: center;
+    color: black;
+    font-style: bold;
+    font-size: 1em;
+    padding: 20px 10px 0px 10px;
+    border-radius: 5px 5px 0 0;
 }
 
 div.calendar p {
-	font-size: 3em;
-	line-height: 0%;
-	color:black;
-	font-weight: bold;
+    font-size: 3em;
+    line-height: 0%;
+    color: black;
     margin: 30px;
 }
-
 
 .qrcode-scan {
     text-align: center;
@@ -73,17 +61,16 @@ div.calendar p {
     animation: fade 5s;
 }
 
-
 .qrcode-scan i {
     padding: 5px;
 }
 
-
 body {
-    background-color:#E2F2FE;
+    background-color: #E2F2FE;
 }
+
 .fadein-body {
-     animation: fadein 2s;
+    animation: fadein 2s;
 }
 
 @keyframes fadein {
@@ -102,21 +89,19 @@ body {
     min-height: 1px;
 }
 
-
-#counter{
-  text-align: left;
-  font-family: sans-serif;
-  color: #444;
-  font-size: 30px;
-  padding-bottom: 20px;
+#counter {
+    text-align: left;
+    font-family: sans-serif;
+    color: #444;
+    font-size: 30px;
+    padding-bottom: 20px;
 }
 
 .product-image {
-width: 100%;
-border-radius: 5px;
-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
-
 
 .profile-bg {
     background-color: #42A5f5;
@@ -136,9 +121,8 @@ box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px 
     padding-top: 25px;
 }
 
-
 .user-profile-info li {
-padding: 15px;
-text-align: center;
-color: #039be5;
+    padding: 15px;
+    text-align: center;
+    color: #039be5;
 }
