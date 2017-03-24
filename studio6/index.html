@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>QR Scanny</title>
     <link rel="stylesheet" href="stylesheet.css">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
     <link rel="stylesheet" href="stylesheet.css">
@@ -21,103 +20,111 @@
 
 
 <body class="fadein-body">
-<header>
-    <div class="row">
-        <div class="col s12 m12 l12" style="padding: 0px;">
-          <!-- sidenav -->
-        <ul id="slide-out" class="side-nav" style="margin-top: 56px;">
-          <li><div class="userView">
-            <div class="background" style="background-color: #90CAF9;">
-            </div>
-            <a href="#!user"><img class="circle" src="person.png"></a>
-            <a href="#!name"><span class="white-text name">John Smith</span></a>
-            <a href="#!email"><span class="white-text email">johnsmith123@gmail.com</span></a>
-          </div></li>
-         <li><a class="waves-effect" href="index.html">Home</a></li>
-          <li><div class="divider"></div></li>
-          <li><a class="waves-effect" href="profile.html">My Profile</a></li>
-          <li><div class="divider"></div></li>
-          <li><a class="waves-effect" href="#!">Guidence</a></li>
-          <li><div class="divider"></div></li>
-        </ul>
-        <!-- sidenav -->
-    <nav class="nav-header-blue" style="position: fixed;">
-    <div class="nav-wrapper">
-      <a href="#!" class="brand-logo page-title">Home</a>
-      <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
-    </div>
-  </nav>
-  <div style="display: flex;position: relative;margin-top:56px;">
-    <div style="flex: 1;">
-       <div class="calendar">
-        <h1 class="month"></h1>
-        <p class="day"></p>
-    </div>
-      <img src="background.jpg" style="width: 100%;">
-    </div>
-  </div>
-  <a class="btn-floating btn-large waves-effect waves-light red camera" href="camera.html"><i class="fa fa-camera" aria-hidden="true"></i>
+    <header>
+        <div class="row">
+            <div class="col s12 m12 l12" style="padding: 0px;">
+                <!-- sidenav -->
+                <ul id="slide-out" class="side-nav" style="margin-top: 56px;">
+                    <li>
+                        <div class="userView">
+                            <div class="background" style="background-color: #90CAF9;">
+                            </div>
+                            <a href="profile.html"><img class="circle" src="person.png" alt="bg"></a>
+                            <a href="profile.html"><span class="white-text name">John Smith</span></a>
+                            <a href="profile.html"><span class="white-text email">johnsmith123@gmail.com</span></a>
+                        </div>
+                    </li>
+                    <li><a class="waves-effect" href="index.html">Home</a></li>
+                    <li>
+                        <div class="divider"></div>
+                    </li>
+                    <li><a class="waves-effect" href="profile.html">My Profile</a></li>
+                    <li>
+                        <div class="divider"></div>
+                    </li>
+                    <li><a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML 5</a></li>
+                    <li>
+                        <div class="divider"></div>
+                    </li>
+                    <li><a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">Valid CSS</a></li>
+                    <li>
+                        <div class="divider"></div>
+                    </li>
+                </ul>
+                <!-- sidenav -->
+                <nav class="nav-header-blue" style="position: fixed;">
+                    <div class="nav-wrapper">
+                        <a href="#!" class="brand-logo page-title">Home</a>
+                        <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+                    </div>
+                </nav>
+                <div style="display: flex;position: relative;margin-top:56px;">
+                    <div style="flex: 1;">
+                        <div class="calendar">
+                            <h1 class="month"></h1>
+                            <p class="day"></p>
+                        </div>
+                        <img src="background.jpg" style="width: 100%;" alt="bg">
+                    </div>
+                </div>
+                <a class="btn-floating btn-large waves-effect waves-light red camera" href="camera.html"><i class="fa fa-camera" aria-hidden="true"></i>
 </a>
+            </div>
+        </div>
+
+        <!-- side nav -->
+    </header>
+    <div class="row">
+        <div class="center-column">
+            <div class="card">
+                <div class="card-image">
+                    <img src="recycle.jpg" alt="bg">
+                </div>
+                <div class="card-content">
+                    <h5>Recycling Guide</h5>
+                    <p>Explore different way to recyle different materials. It is everyone's responsibility to promote recycling, and it is also everyone's duty to care about sustainability.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="http://www.recycling-guide.org.uk">Click Me to View</a>
+                </div>
+            </div>
         </div>
     </div>
-
-<!-- side nav -->
-</header>
-  <div class="row">
+    <div class="row">
         <div class="center-column">
-          <div class="card">
-            <div class="card-image">
-              <img src="recycle.jpg">
+            <div class="card">
+                <div class="card-image">
+                    <img src="goodguide.png" alt="bg">
+                </div>
+                <div class="card-content">
+                    <h5>Good Guide Website</h5>
+                    <p>A helpful guide that provides information on different products that you use on a daily basis. It rates products based its sustainability and health effect on body.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="#">Click Me to View</a>
+                </div>
             </div>
-            <div class="card-content">
-              <h5>Recycling Guide</h5>
-              <p>Explore different way to recyle different materials. It is everyone's 
-                responsibility to promote recycling, and it is also everyone's duty to 
-                care about sustainability.
-              </p>
-            </div>
-            <div class="card-action">
-              <a href="http://www.recycling-guide.org.uk">Click Me to View</a>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="row">
+    </div>
+    <div class="row">
         <div class="center-column">
-          <div class="card">
-            <div class="card-image">
-              <img src="goodguide.png">
+            <div class="card">
+                <div class="card-image">
+                    <img src="recycle2.jpg" alt="bg">
+                </div>
+                <div class="card-content">
+                    <h5>Reasons Why You Should Recycle</h5>
+                    <p>An artcile talks about why people should care about recycle, and what kinds of environment benefit can recycling bring. People should start include recycling as a daily routine rather than a one time things.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="http://www.affluentmagazine.com/articles/article/69">Click Me to View</a>
+                </div>
             </div>
-            <div class="card-content">
-              <h5>Good Guide Website</h5>
-              <p>A helpful guide that provides information on different products that you use on a daily basis. It 
-                rates products based its sustainability and health effect on body.
-              </p>
-            </div>
-            <div class="card-action">
-              <a href="#">Click Me to View</a>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="center-column">
-          <div class="card">
-            <div class="card-image">
-              <img src="recycle2.jpg">
-            </div>
-            <div class="card-content">
-              <h5>Reasons Why You Should Recycle</h5>
-              <p>An artcile talks about why people should care about recycle, and what kinds of 
-                environment benefit can recycling bring. People should start include recycling as a daily routine rather than a one time things.
-              </p>
-            </div>
-            <div class="card-action">
-              <a href="http://www.affluentmagazine.com/articles/article/69">Click Me to View</a>
-            </div>
-          </div>
-        </div>
-      </div>
+    </div>
 
 </body>
 
